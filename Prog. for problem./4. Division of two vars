@@ -9,7 +9,20 @@ scanf("%f",&a);
 printf("Enter value of the second number:");
 scanf("%f",&b);
 
+if(b){
+
 printf("%f",a/b);
+
+}
+
+else{
+
+printf("Divisor cant be zero");
+
+}
+
+
+
 
 return 0;
 
