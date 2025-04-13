@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main(){
 
-float a,b;
+int a,b;
 
 printf("Enter value of the first number:");
-scanf("%f",&a);
+scanf("%d",&a);
 
 printf("Enter value of the second number:");
-scanf("%f",&b);
+scanf("%d",&b);
 
-printf("%f",a%b);
+printf("%d",a%b);
 
 return 0;
 
