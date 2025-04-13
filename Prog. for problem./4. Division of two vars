@@ -13,5 +13,4 @@ printf("%f",a/b);
 
 return 0;
 
-
 }
