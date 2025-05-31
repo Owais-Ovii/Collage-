@@ -1,28 +1,27 @@
-/*to print
-*
-**
-***
+/*
+To print :
+                    **
+                    ***
+                    ****
 */
 #include<stdio.h>
-int main (){
 
-    int t; //user input
-    scanf("%d", &t);
-    int n=1;
-    int w;
+int main(){
+    
+int ui;
+printf("Total no of lines:\t");
+scanf("%d",&ui);
 
-    while (n<=t)
-    {
-        while (w<n)
-        {
-        printf ("*");
-        w++;
+    for(int i =1;i<=ui;i++){
+        
+        for(int j=-1;j<i;j++){
+            
+            printf("*");
+            
         }
-        w=0;
-        printf("\n");
-        n++;
+        
+    printf("\n");
     }
     
-
     return 0;
 }
