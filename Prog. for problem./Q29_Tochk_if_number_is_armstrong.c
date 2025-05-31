@@ -39,9 +39,9 @@ int main(){
         
         printf("%d",ar[i]);
         
-        sum+=pwer(ar[i],a);
+        sum+=pwer(ar[i],a);//sum of digit raised to total no of digits
         
-        org+=ar[a-i-1]*pwer(10,i);
+        org+=ar[a-i-1]*pwer(10,i);//this converts the integer array to a single int via 123= 3*10^0+2*10^1...
     }
     
 printf("\nAs sum of digit raised to total no of digits = %d and org number = %d",sum,org);
