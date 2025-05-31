@@ -1,4 +1,3 @@
-//Function for arithmetic progression
 #include<stdio.h>
 //power function reqd for gp
     double pwer(double a, int n){
@@ -17,7 +16,7 @@
     }
     
 //Function for geometric progression
-double gprogression(double a,int r, int S_of_howmany_terms,double arrayto_str_ap[S_of_howmany_terms]){//a = first term of ap, d= common difference, Sn= sum of first n terms
+double gprogression(double a,double r, int S_of_howmany_terms,double arrayto_str_ap[S_of_howmany_terms]){//a = first term of ap, d= common difference, Sn= sum of first n terms
     double Sn=0;
     for(int i =0; i<S_of_howmany_terms;i++){
         
@@ -37,7 +36,7 @@ int main(){
     scanf("%lf",&a);
     
     printf("\nEnter value of r:\t");
-    scanf("%lf",&r);
+    scanf(" %lf",&r);
     
     printf("\nTotal terms in progression n:\t");
     scanf("%d",&n);
