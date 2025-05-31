@@ -4,7 +4,7 @@ Fn to print any int Array:
 
 #include<stdio.h>
 
-void piarray(int tcolumns,int array[][tcolumns]){
+void piarray(int tcolumns,int array[][tcolumns]){//only total no of columns needed as argument
     
     for(int i =0;array[i][0]!='\0';i++){
         
