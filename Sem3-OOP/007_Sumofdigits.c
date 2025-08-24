@@ -6,14 +6,14 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    // Make sure the number is positive
+    
     if(num < 0) {
         num = -num;
     }
 
     while(num != 0) {
-        sum += num % 10;  // Add last digit
-        num /= 10;        // Remove last digit
+        sum += num % 10;  
+        num /= 10;        
     }
 
     printf("Sum of digits: %d\n", sum);
