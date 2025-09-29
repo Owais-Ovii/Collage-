@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+using namespace std;
 /* ******************************
 Fn Power fn
 */
@@ -114,11 +114,14 @@ int main()
 
     char arr[10];
     double ga = 0.0;
-    printf("\nFor A ^ p, Enter A:");
-    scanf("%lf", &ga);
+    cout<<"\nFor A ^ p, Enter A:";
+    cin>>ga;
+    //scanf("%lf", &ga);
 
-    printf("\nFor A ^ p, Enter p:");
-    scanf("%s", arr);
+   // printf("\nFor A ^ p, Enter p:");
+    cout<<"\nFor A ^ p, Enter p:";
+    cin>>arr;
+    //scanf("%s", arr);
 
     printf("%lf ^ %s = %lf", ga, arr, upow(ga, arr));
 
