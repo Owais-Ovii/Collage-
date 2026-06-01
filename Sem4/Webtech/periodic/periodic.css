@@ -1,0 +1,50 @@
+body
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.periodic-table
+{
+    display: grid;
+    grid-template-columns: repeat(18, 55px);
+    gap: 3px;
+    justify-content: center;
+}
+
+.series
+{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin: 10px;
+}
+
+.element
+{
+    width: 55px;
+    height: 55px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.empty
+{
+    visibility: hidden;
+}
+
+.alkali      { background:#ffd699; }
+.alkaline    { background:#ffe5a3; }
+.transition  { background:#f5f5a5; }
+.post        { background:#d8f0b0; }
+.metalloid   { background:#a5e6a5; }
+.nonmetal    { background:#dda0dd; }
+.halogen     { background:#f4b6ff; }
+.noble       { background:#bfe7ff; }
+.lanthanide  { background:#ccff99; }
+.actinide    { background:#99ff99; }
