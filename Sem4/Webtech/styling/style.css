@@ -1,0 +1,12 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+.container
+{
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 20px;
+}
