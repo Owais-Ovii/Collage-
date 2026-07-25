@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form onsubmit='return v()'>
+        <input id=f placeholder='First'><input id=l placeholder='Last'><input id=e placeholder='Email'><input id=p
+            type=password placeholder='Password'><input id=m placeholder='Mobile'><textarea
+            id=a></textarea><button>Submit</button>
+    </form>
+    <script>
+        function v() {
+            if (!/^[A-Za-z]{6,}$/.test(f.value)) return alert('Invalid first'), false;
+            if (p.value.length < 6) return alert('Invalid password'), false;
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.value)) return alert('Invalid email'), false;
+            if (!/^\d{10}$/.test(m.value)) return alert('Invalid mobile'), false;
+            if (!l.value.trim() || !a.value.trim()) return alert('Fill all'), false;
+            alert('Valid'); return false;
+        }
+    </script>
+</body>
+
+</html>
