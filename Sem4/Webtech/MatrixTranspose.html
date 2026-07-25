@@ -3,8 +3,18 @@
 
 <body>
     <script>
-        let r = +prompt('Rows'), c = +prompt('Cols'), m = []; for (let i = 0; i < r; i++) { m[i] = []; for (let j = 0; j < c; j++)m[i][j] = prompt(`a[${i}][${j}]`); }
-        let t = []; for (let j = 0; j < c; j++) { t[j] = []; for (let i = 0; i < r; i++)t[j][i] = m[i][j]; }
+        let r = +prompt('Rows'), c = +prompt('Cols'), m = []; 
+        for (let i = 0; i < r; i++) 
+        { m[i] = []; 
+         for (let j = 0; j < c; j++)
+             m[i][j] = prompt(`a[${i}][${j}]`); 
+        }
+        let t = []; 
+        for (let j = 0; j < c; j++) 
+        { t[j] = []; 
+         for (let i = 0; i < r; i++)
+             t[j][i] = m[i][j]; 
+        }
         document.write('<pre>' + JSON.stringify(t, null, 2) + '</pre>');
     </script>
 </body>
