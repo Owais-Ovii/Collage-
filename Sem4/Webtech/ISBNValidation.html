@@ -4,7 +4,8 @@
 <body><input id='isbn'><button onclick='v()'>Validate</button>
     <p id='o'></p>
     <script>
-        function v() { const r = /^(?:\d{9}[\dX]|\d{13})$/; o.textContent = r.test(isbn.value) ? 'Valid' : 'Invalid'; }
+        function v() { const r = /^(?:\d{9}[\dX]|\d{13})$/; 
+                      o.textContent = r.test(isbn.value) ? 'Valid' : 'Invalid'; }
     </script>
 </body>
 
